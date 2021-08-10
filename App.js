@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ActivityIndicator, FlatList, Text, View } from "react-native";
+import { ActivityIndicator, FlatList, Text, View, Image } from "react-native";
 
 export default class App extends Component {
   constructor(props) {
@@ -14,10 +14,10 @@ export default class App extends Component {
   async getMovies() {
     try {
       const response = await fetch(
-        "https://github.com/samuel-joseph/reactnative-project/blob/main/pokemon.json"
+        "https://samuel-joseph.github.io/jsonapi/pokemon.json"
       );
       const json = await response.json();
-      console.log(json);
+      console.log(json.pokemon[0].moves[0].animation);
       this.setState({ data: json.pokemon });
     } catch (error) {
       console.log(error);
@@ -42,7 +42,17 @@ export default class App extends Component {
             data={data}
             keyExtractor={({ id }, index) => id}
             renderItem={({ item }) => (
-              <Text>{/* {item.title}, {item.releaseYear} */}</Text>
+              <View key={item.id}>
+                <Image
+                  source={{ uri: `${item.frontImage}` }}
+                  style={{ width: 80, height: 80 }}
+                />
+                <Image
+                  source={{ uri: `${item.backImage}` }}
+                  style={{ width: 80, height: 80 }}
+                />
+                <Text key={item.id}>{item.name}</Text>
+              </View>
             )}
           />
         )}
@@ -50,3 +60,5 @@ export default class App extends Component {
     );
   }
 }
+
+// pokemon[0].moves[0].animation

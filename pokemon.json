@@ -61,7 +61,7 @@
       "currentHealth": 400,
       "totalExperience": 100,
       "currentExperience": 0,
-      "fullyEvolved": false,
+      "fullyEvolved": true,
       "type": "grass",
       "move": [{
         "name": "Tackle",
@@ -85,7 +85,41 @@
           "attack": 120,
           "animation": "https://media3.giphy.com/media/11XU8sAwhvwjok/source.gif",
           "type": "Grass"
-        }
+        },
+        {
+          "pokemonId": 4,
+          "name": "Charmander",
+          "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/4.gif",
+          "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/4.gif",
+          "health": 300,
+          "currentHealth": 300,
+          "totalExperience": 100,
+          "currentExperience": 0,
+          "fullyEvolved": false,
+          "type": "Fire",
+          "move": [{
+            "name": "Tackle",
+              "attack": 35,
+              "animation":
+                "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
+              "type": "Normal"},{
+                "name": "Ember",
+            "attack": 55,
+              "animation": "https://i.pinimg.com/originals/29/ca/76/29ca767e0d917e541cd18eb97f4825dc.gif",
+              "type": "Fire"
+              },{
+              "name": "Flame Thrower",
+            "attack": 65,
+            "animation":
+              "https://i.gifer.com/3q62.gif",
+            "type": "Grass"
+          },
+            {
+              "name": "Solar Beam",
+              "attack": 120,
+              "animation": "https://media3.giphy.com/media/11XU8sAwhvwjok/source.gif",
+              "type": "Grass"
+            }
         ]}
   ]
   }
