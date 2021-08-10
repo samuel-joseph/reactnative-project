@@ -45,11 +45,11 @@ export default class App extends Component {
               <View key={item.id}>
                 <Image
                   source={{ uri: `${item.frontImage}` }}
-                  style={{ width: 80, height: 80 }}
+                  style={{ width: 100, height: 90 }}
                 />
                 <Image
                   source={{ uri: `${item.backImage}` }}
-                  style={{ width: 80, height: 80 }}
+                  style={{ width: 100, height: 80 }}
                 />
                 <Text key={item.id}>{item.name}</Text>
               </View>
