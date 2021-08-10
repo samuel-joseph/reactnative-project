@@ -1,94 +1,123 @@
+// {
+//   "pokemon":[{
+//     "pokemonId": 1,
+//     "name": "Bulbasaur",
+//     "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
+//     "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/1.gif",
+//     "health": 300,
+//     "currentHealth": 300,
+//     "totalExperience": 100,
+//     "currentExperience": 0,
+//     "fullyEvolved": false,
+//     "type": "grass",
+//     "moves": [{
+//       "name": "Tackle",
+//         "attack": 35,
+//         "animation":
+//           "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
+//         "type": "Normal"},{
+//           "name": "Vine Whip",
+//        "attack": 55,
+//         "animation": "https://i.imgur.com/uDJiGRk.gif",
+//         "type": "Grass"
+//         }
+//       ]
+//   },
+//   {
+//     "pokemonId": 2,
+//     "name": "Ivysaur",
+//     "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/2.gif",
+//     "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/2.gif",
+//     "health": 350,
+//     "currentHealth": 350,
+//     "totalExperience": 300,
+//     "currentExperience": 0,
+//     "fullyEvolved": false,
+//     "type": "grass",
+//     "moves": [{
+//       "name": "Tackle",
+//         "attack": 35,
+//         "animation":
+//           "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
+//         "type": "Normal"},{
+//           "name": "Vine Whip",
+//        "attack": 55,
+//         "animation": "https://i.imgur.com/uDJiGRk.gif",
+//         "type": "Grass"
+//         },{
+//         "name": "Razor Leaf",
+//       "attack": 65,
+//       "animation":
+//         "https://thumbs.gfycat.com/PlumpKnobbyArmednylonshrimp-size_restricted.gif",
+//       "type": "Grass"
+//     }
+//       ]
+//   },{
+//     "pokemonId": 3,
+//     "name": "Venosaur",
+//     "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/3.gif",
+//     "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/3.gif",
+//     "health": 400,
+//     "currentHealth": 400,
+//     "totalExperience": 100,
+//     "currentExperience": 0,
+//     "fullyEvolved": false,
+//     "type": "grass",
+//     "move": [{
+//       "name": "Tackle",
+//         "attack": 35,
+//         "animation":
+//           "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
+//         "type": "Normal"},{
+//           "name": "Vine Whip",
+//        "attack": 55,
+//         "animation": "https://i.imgur.com/uDJiGRk.gif",
+//         "type": "Grass"
+//         },{
+//         "name": "Razor Leaf",
+//       "attack": 65,
+//       "animation":
+//         "https://thumbs.gfycat.com/PlumpKnobbyArmednylonshrimp-size_restricted.gif",
+//       "type": "Grass"
+//     },
+//       {
+//         "name": "Solar Beam",
+//         "attack": 120,
+//         "animation": "https://media3.giphy.com/media/11XU8sAwhvwjok/source.gif",
+//         "type": "Grass"
+//       }
+//       ]}
+// ]
+// }
+
 {
-  "pokemon":[{
-    "pokemonId": 1,
-    "name": "Bulbasaur",
-    "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif",
-    "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/1.gif",
-    "health": 300,
-    "currentHealth": 300,
-    "totalExperience": 100,
-    "currentExperience": 0,
-    "fullyEvolved": false,
-    "type": "grass",
-    "moves": [{
-      "name": "Tackle",
-        "attack": 35,
-        "animation":
-          "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
-        "type": "Normal"},{
-          "name": "Vine Whip",
-       "attack": 55,
-        "animation": "https://i.imgur.com/uDJiGRk.gif",
-        "type": "Grass"
-        }
-      ]
+  "title": "The Basics - Networking",
+  "description": "Your app fetched this from a remote endpoint!",
+  "movies": [
+  {
+  "id": "1",
+  "title": "Star Wars",
+  "releaseYear": "1977"
   },
   {
-    "pokemonId": 2,
-    "name": "Ivysaur",
-    "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/2.gif",
-    "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/2.gif",
-    "health": 350,
-    "currentHealth": 350,
-    "totalExperience": 300,
-    "currentExperience": 0,
-    "fullyEvolved": false,
-    "type": "grass",
-    "moves": [{
-      "name": "Tackle",
-        "attack": 35,
-        "animation":
-          "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
-        "type": "Normal"},{
-          "name": "Vine Whip",
-       "attack": 55,
-        "animation": "https://i.imgur.com/uDJiGRk.gif",
-        "type": "Grass"
-        },{
-        "name": "Razor Leaf",
-      "attack": 65,
-      "animation":
-        "https://thumbs.gfycat.com/PlumpKnobbyArmednylonshrimp-size_restricted.gif",
-      "type": "Grass"
-    }
-      ]
-  },{
-    "pokemonId": 3,
-    "name": "Venosaur",
-    "frontImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/3.gif",
-    "backImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/back/3.gif",
-    "health": 400,
-    "currentHealth": 400,
-    "totalExperience": 100,
-    "currentExperience": 0,
-    "fullyEvolved": false,
-    "type": "grass",
-    "move": [{
-      "name": "Tackle",
-        "attack": 35,
-        "animation":
-          "https://i.ya-webdesign.com/images/transparent-laser-animated-16.gif",
-        "type": "Normal"},{
-          "name": "Vine Whip",
-       "attack": 55,
-        "animation": "https://i.imgur.com/uDJiGRk.gif",
-        "type": "Grass"
-        },{
-        "name": "Razor Leaf",
-      "attack": 65,
-      "animation":
-        "https://thumbs.gfycat.com/PlumpKnobbyArmednylonshrimp-size_restricted.gif",
-      "type": "Grass"
-    },
-      {
-        "name": "Solar Beam",
-        "attack": 120,
-        "animation": "https://media3.giphy.com/media/11XU8sAwhvwjok/source.gif",
-        "type": "Grass"
-      }
-      ]
+  "id": "2",
+  "title": "Back to the Future",
+  "releaseYear": "1985"
+  },
+  {
+  "id": "3",
+  "title": "The Matrix",
+  "releaseYear": "1999"
+  },
+  {
+  "id": "4",
+  "title": "Inception",
+  "releaseYear": "2010"
+  },
+  {
+  "id": "5",
+  "title": "Interstellar",
+  "releaseYear": "2014"
   }
-
-
-]
-}
+  ]
+  }
