@@ -1,55 +1,42 @@
 import React, { Component } from "react";
 import { ActivityIndicator, FlatList, Text, View, Image } from "react-native";
+import Start from "./component/Start";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      data: [],
+      pokemon: [],
       isLoading: true,
     };
   }
 
-  async getMovies() {
-    try {
-      const response = await fetch(
-        "https://samuel-joseph.github.io/jsonapi/pokemon.json"
-      );
-      const json = await response.json();
-      console.log(json.pokemon[0].moves[0].animation);
-      this.setState({ data: json.pokemon });
-    } catch (error) {
-      console.log(error);
-    } finally {
-      this.setState({ isLoading: false });
-    }
-  }
-
-  componentDidMount() {
-    this.getMovies();
-  }
+  capture = (pokemon) => {
+    console.log("*********************************************************");
+    this.setState((prevState) => ({
+      ...prevState,
+      pokemon,
+    }));
+  };
 
   render() {
-    const { data, isLoading } = this.state;
+    const { pokemon, isLoading } = this.state;
 
     return (
       <View style={{ flex: 1, padding: 24 }}>
-        {isLoading ? (
-          <ActivityIndicator />
+        {console.log(pokemon)}
+        {pokemon.length === 0 ? (
+          <Start capture={this.capture} userPokemon={pokemon} />
         ) : (
           <FlatList
-            data={data}
+            data={pokemon}
             keyExtractor={({ id }, index) => id}
             renderItem={({ item }) => (
               <View key={item.id}>
                 <Image
                   source={{ uri: `${item.frontImage}` }}
                   style={{ width: 100, height: 90 }}
-                />
-                <Image
-                  source={{ uri: `${item.backImage}` }}
-                  style={{ width: 100, height: 80 }}
                 />
                 <Text key={item.id}>{item.name}</Text>
               </View>
